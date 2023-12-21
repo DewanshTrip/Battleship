@@ -1,6 +1,6 @@
-from board import Ship,Board #important for the project
+from board import Ship,Board 
 import sys
-## Make sure to uncomment when submitting to Codio. 
+
 
 def input( prompt=None ):
    if prompt != None:
@@ -77,12 +77,12 @@ class Player(object):
 
 class BattleshipGame(object):
     """
-        add your Class header here.
+        Intiailizes and codes the game
     """
 
     def __init__(self, player1, player2):
         """
-            add your method header here.
+            Intializes the players
         """
         self.player1 = player1
         self.player2 = player2
@@ -104,7 +104,7 @@ class BattleshipGame(object):
 
     def display(self):
         """
-            add your function header here.
+            Displaying both players boards
         """
         print("Player 1's board:")
         print(self.player1.board)
@@ -116,7 +116,7 @@ class BattleshipGame(object):
 
     def play(self):
         """
-            add your function header here.
+            The main function for beginning the game
         """
         
         self.player1.set_all_ships()
